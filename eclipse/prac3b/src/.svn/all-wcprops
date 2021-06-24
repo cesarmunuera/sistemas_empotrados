@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/ic_se_09105135x/!svn/ver/9/trunk/prac3b/src
+END
+leon3_ev_handling_asm.S
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/ic_se_09105135x/!svn/ver/9/trunk/prac3b/src/leon3_ev_handling_asm.S
+END
+leon3_bprint.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ic_se_09105135x/!svn/ver/9/trunk/prac3b/src/leon3_bprint.c
+END
+leon3_ev_handling.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ic_se_09105135x/!svn/ver/9/trunk/prac3b/src/leon3_ev_handling.c
+END
+leon3_uart.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ic_se_09105135x/!svn/ver/9/trunk/prac3b/src/leon3_uart.c
+END
+leon3_hw_irqs.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ic_se_09105135x/!svn/ver/9/trunk/prac3b/src/leon3_hw_irqs.c
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ic_se_09105135x/!svn/ver/9/trunk/prac3b/src/main.c
+END

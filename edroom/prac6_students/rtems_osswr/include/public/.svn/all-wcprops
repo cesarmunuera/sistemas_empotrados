@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/ic_se_09105135x/!svn/ver/27/trunk/prac6_students/rtems_osswr/include/public
+END
+basic_types.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/ic_se_09105135x/!svn/ver/27/trunk/prac6_students/rtems_osswr/include/public/basic_types.h
+END
+rtemsapi.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/ic_se_09105135x/!svn/ver/27/trunk/prac6_students/rtems_osswr/include/public/rtemsapi.h
+END
+posix.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/ic_se_09105135x/!svn/ver/27/trunk/prac6_students/rtems_osswr/include/public/posix.h
+END

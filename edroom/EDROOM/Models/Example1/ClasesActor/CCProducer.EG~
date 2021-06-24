@@ -1,0 +1,265 @@
+[Version Actor SW]
+5
+0
+0
+0
+0
+[Modificado]
+1
+1
+0
+[Estructura]
+[Version Estructura]
+3
+[Parametro]
+NULL
+ 
+ 
+[FinParametro]
+[Stack]
+1
+[FinStack]
+[Puertos]
+1
+[Version Puerto]
+0
+pOut
+1
+1
+0
+[Version Grafico Puerto]
+0
+93
+33
+CPRecData
+[FinPuertos]
+[ActoresComponente]
+0
+[FinActoresComponente]
+[Uniones]
+0
+[FinUniones]
+[NumTimers]
+0
+[FinNumTimers]
+[NumMsgDef]
+10
+[FinNumMsgDef]
+[FinEstructura]
+[Comportamiento]
+[Version Comportamiento]
+3
+0
+[Pools]
+1
+[Version PoolDatosMens]
+0
+EDROOMPoolTEDROOMByte
+TEDROOMByte
+10
+[Modulos]
+0
+[Eventos]
+0
+[Maquina de Estados]
+[Version Maquina de Estados]
+1
+Top
+NULL
+[Subestados]
+2
+[Version SubEstados]
+3
+I
+;
+;
+;
+;
+;
+0
+0
+[ObjetoGrafico]
+[Version Objeto Grafico]
+0
+73 73 55 55
+[FinObjetoGrafico]
+Ready
+;
+;
+;
+;
+;
+1
+0
+[ObjetoGrafico]
+[Version Objeto Grafico]
+0
+147 236 343 94
+[FinObjetoGrafico]
+[PuntosEleccion]
+1
+[Version PuntosEleccion]
+2
+SendData
+0
+[ObjetoGrafico]
+[Version Objeto Grafico]
+0
+311 115 35 35
+[FinObjetoGrafico]
+SendData
+0
+[Ramas]
+2
+[Version Ramas]
+5
+DataOK
+true
+Ready
+DSubEst
+;
+ 
+ 
+ 
+;
+;
+;
+;
+[GraficoRama]
+[Version GraficoRama]
+0
+312 138 203 236 2
+[FinGraficoRama]
+ResetData
+GNeedReset()
+Ready
+DSubEst
+FResetData();
+ 
+ 
+ 
+;
+;
+;
+;
+[GraficoRama]
+[Version GraficoRama]
+0
+340 142 427 236 0
+[FinGraficoRama]
+[Transiciones]
+2
+[Version Transicion]
+5
+Init
+I
+OSubEstI
+Ready
+DSubEst
+;
+[Trigger]
+EDROOMsl
+EDROOMStart
+true
+ 
+ 
+ 
+;
+;
+;
+0
+;
+[GraficoTransicion]
+[Version GraficoTransicion]
+0
+120 116 147 246 0
+[FinGraficoTransicion]
+SendData
+Ready
+OSubEst
+SendData
+DPEleccion
+;
+[Trigger]
+pOut
+SConReady
+true
+ 
+ 
+ 
+;
+FSendData();
+;
+0
+;
+[GraficoTransicion]
+[Version GraficoTransicion]
+0
+330 236 328 149 3
+[FinGraficoTransicion]
+[VariablesConstantes]
+2
+[Version VariYConst]
+0
+Vaux
+TEDROOMByte
+'a'
+Variable
+0
+[Version VariYConst]
+0
+VauxLimit
+TEDROOMByte
+'f'
+Constante
+0
+[Metodos]
+3
+[Version Metodos]
+21
+BasicAction
+FResetData()
+0
+0
+0
+0
+1
+ 
+1
+Vaux = 'a';
+SendMsg
+FSendData()
+0
+0
+0
+0
+1
+ 
+5
+	
+		// Complete Data 
+	
+	*pSData_Data= Vaux;
+	Vaux++;
+[ServiceRequest]
+send
+pOut
+SData
+TEDROOMByte
+EDROOMprioNormal
+Guard
+GNeedReset()
+0
+0
+0
+0
+1
+ 
+2
+//Retronara true si la variable es superior a 'e', activando entonces el reseteo
+return (Vaux > VauxLimit);
+[MaquinasSubEstados]
+0
+[FinMaquinasSubEstados]
+[Fin Maquina de Estados]
+[FinComportamiento]
